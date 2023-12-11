@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đường Đi Ngắn Nhất</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        #graph{
+            width: 700px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+        <svg id="graph"></svg>
+        <div>
+            <label for="startNode">Điểm Xuất Phát:</label>
+            <select id="startNode"></select>
+            <label for="endNode">Điểm Đích:</label>
+            <select id="endNode"></select>
+            <button onclick="findShortestPath()">Tìm Đường Đi</button>
+        </div>
+    </div>
+
+    <script>
+        // Định nghĩa đối tượng Bản đồ
+        class Graph {
+            constructor() {
+                this.nodes = [];
+                this.edges = [];
+            }
+
+            addNode(node, x, y) {
+                this.nodes.push({ node, x, y });
+            }
+
+            addEdge(node1, node2, weight) {
+                this.edges.push({ node1, node2, weight});
+                this.edges.push({ node1: node2, node2: node1, weight}); // Đối xứng
+            }
+        }
+
+        // Khởi tạo đối tượng Bản đồ
+        const graph = new Graph();
+
+        // Thêm các điểm và cạnh vào đối tượng Bản đồ
+        graph.addNode("A", 50, 50);
+        graph.addNode("B", 150, 50);
+        graph.addNode("C", 50, 400);
+        graph.addNode("D", 200, 350);
+        graph.addNode("E", 300, 80);
+        graph.addNode("F", 400, 50);
+        graph.addNode("G", 400, 400);
+
+        graph.addEdge("A", "B", 1);
+        graph.addEdge("A", "C", 3);
+        graph.addEdge("B", "D", 1);
+        graph.addEdge("C", "D", 1);
+        graph.addEdge("A", "D", 6);
+        graph.addEdge("A", "G", 8);
+        graph.addEdge("B", "F", 2);
+        graph.addEdge("B", "G", 5);
+        graph.addEdge("C", "E", 2);
+        graph.addEdge("C", "G", 5);
+        graph.addEdge("D", "G", 6);
+        graph.addEdge("D", "E", 3);
+        graph.addEdge("E", "G", 7);
+        graph.addEdge("F", "G", 6);
+
+        // Lấy các phần tử HTML select
+        const startNodeSelect = document.getElementById("startNode");
+        const endNodeSelect = document.getElementById("endNode");
+        graph.nodes.forEach(node => {
+            const option = document.createElement("option");
+            option.value = node.node;
+            option.textContent = node.node;
+            startNodeSelect.appendChild(option.cloneNode(true));
+            endNodeSelect.appendChild(option);
+        });
+    
+        // Dùng D3.js để vẽ đồ thị
+        const svg = d3.select("#graph");
+        const radius = 10;
+    
+        // Vẽ các node
+        svg.selectAll("circle")
+            .data(graph.nodes)
+            .enter().append("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", radius)
+            .attr("fill", "red");
+    
+        // Vẽ các cạnh
+        svg.selectAll("line")
+            .data(graph.edges)
+            .enter().append("line")
+            .attr("x1", d => graph.nodes.find(n => n.node === d.node1).x)
+            .attr("y1", d => graph.nodes.find(n => n.node === d.node1).y)
+            .attr("x2", d => graph.nodes.find(n => n.node === d.node2).x)
+            .attr("y2", d => graph.nodes.find(n => n.node === d.node2).y)
+            .attr("stroke", d => d.color || "black");
+    
+        // Hiển thị tên điểm    
+        svg.selectAll("text.node-label")
+            .data(graph.nodes)
+            .enter().append("text")
+            .attr("class", "node-label")
+            .attr("x", d => d.x-5)
+            .attr("y", d => d.y+5)
+            .attr("font-size", "20px")
+            .text(d => d.node);
+    
+        // Hiển thị trọng số cạnh
+        svg.selectAll("text.edge-weight")
+            .data(graph.edges)
+            .enter().append("text")
+            .attr("class", "edge-weight")
+            .attr("x", d => (graph.nodes.find(n => n.node === d.node1).x + graph.nodes.find(n => n.node === d.node2).x) / 2+5)
+            .attr("y", d => (graph.nodes.find(n => n.node === d.node1).y + graph.nodes.find(n => n.node === d.node2).y) / 2+5)
+            .text(d => d.weight);   
+            
+    function findShortestPath() {
+    svg.selectAll("path").remove();    
+    const startNode = startNodeSelect.value;
+    const endNode = endNodeSelect.value;
+    
+    function dijkstra(graph, start, end) {
+    const distances = {};
+    const previousNodes = {};
+    const queue = [];
+    
+    // Khởi tạo các giá trị ban đầu
+    graph.nodes.forEach(node => {
+        distances[node.node] = Infinity;
+        previousNodes[node.node] = null; 
+        queue.push(node.node);
+    });
+    
+    distances[start] = 0;
+    
+    while (queue.length > 0) {
+        // Lấy node có khoảng cách ngắn nhất từ đỉnh đầu tiên trong hàng đợi
+        const current = queue.reduce((minNode, node) =>
+            distances[node] < distances[minNode] ? node : minNode
+        );
+    
+        // Lấy index của node hiện tại trong hàng đợi
+        const currentIndex = queue.indexOf(current);
+        // Loại bỏ node hiện tại khỏi hàng đợi
+        queue.splice(currentIndex, 1);
+    
+        // Duyệt qua các node kề của node hiện tại
+        graph.edges
+            .filter(edge => edge.node1 === current || edge.node2 === current)
+            .forEach(edge => {
+                const neighbor = edge.node1 === current ? edge.node2 : edge.node1;
+                const totalDistance = distances[current] + edge.weight;
+    
+                // Nếu khoảng cách tính được ngắn hơn khoảng cách hiện tại
+                if (totalDistance < distances[neighbor]) {
+                    distances[neighbor] = totalDistance;
+                    previousNodes[neighbor] = current;
+                }
+            });
+    }
+    
+    // Xây dựng đường đi từ endNode đến startNode
+    const path = [end];
+    let current = end;
+    while (current !== start) {
+        current = previousNodes[current];
+        path.unshift(current);
+    }
+    
+    return path;
+    }
+    
+    const shortestPath = dijkstra(graph, startNode, endNode);
+    
+    alert(`Đường đi ngắn nhất từ ${startNode} đến ${endNode} theo thuật toán Dijkstra là: ${shortestPath.join(' -> ')}`);
+    svg.append("path")
+        .datum(shortestPath.map(nodeName => graph.nodes.find(node => node.node === nodeName)))
+        .attr("d", d3.line()
+            .x(d => d.x)
+            .y(d => d.y)
+        )
+        .attr("stroke", "green")
+        .attr("stroke-width", 3)
+        .attr("fill", "none");
+    }</script>
+</body>
+</html>
