@@ -222,7 +222,7 @@
                         console.error('Error fetching way data:', error);
                     })
 
-                ]).then(() => {
+                ])
     // console.log(graph);
     // for (const [wayId, way] of graph.ways) {
     //         const wayNodes = way.nodes.map(nodeId => graph.getNodeById(nodeId));
@@ -256,8 +256,8 @@
                         }
                         
                     }
-});
-// console.log(graph);
+
+console.log(graph);
 document.getElementById('methodSelection').addEventListener('input', function () {
     selectedMethod = this.value; // Lưu giá trị được chọn vào biến selectedMethod
 });
