@@ -1,6 +1,7 @@
 import {dijkstra} from "./dijkstra.js";
 import {bfs} from "./bfs.js";
 
+// const haversine = require('haversine-distance');
 const map = L.map('map').setView([21.0045017 ,105.8472066], 17);
 let markers = [];
 let selectedMethod, startNodeId, targetNodeId, totalDistance;
@@ -8,6 +9,10 @@ let selectedMethod, startNodeId, targetNodeId, totalDistance;
 // Thêm layer OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
+map.on('click', function(e){
+    var marker = new L.marker(e.latlng).addTo(map);
+    console.log(e)
+});
 
 // Sử dụng đối tượng Graph
 class Graph {
@@ -58,12 +63,18 @@ class Graph {
                 addMarkerToMap(nextNode);
                 const polyline = L.polyline([[currentNode.lat, currentNode.lon], [nextNode.lat, nextNode.lon]], { color: 'blue', weight:3}).addTo(map);
             }
-        }
+        }   
 
-        function calculateDistance(node1, node2) {
-            const coord1 = { lat: node1.lat, lon: node1.lon };
-            const coord2 = { lat: node2.lat, lon: node2.lon };
-            const distance = haversine(coord1, coord2);
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            // Haversine formula to calculate distance between two points on the Earth
+            const R = 6371;  // Radius of the Earth in kilometers
+            const dLat = (lat2 - lat1) * (Math.PI / 180);
+            const dLon = (lon2 - lon1) * (Math.PI / 180);
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                      Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+                      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            const distance = R * c;
             return distance;
         }
 
@@ -72,103 +83,17 @@ class Graph {
             for (let i = 0; i < path.length - 1; i++) {
                 const currentNode = graph.nodes[path[i]];
                 const nextNode = graph.nodes[path[i + 1]];
-                const distance = calculateDistance(currentNode, nextNode);
+                const latitude1=currentNode.lat;
+                const longitude1=currentNode.lon;
+                const latitude2=nextNode.lat;
+                const longitude2=nextNode.lon;
+                const distance = haversineDistance(latitude1, longitude1, latitude2, longitude2);
                 totalDistance += distance;
             }
             return totalDistance;
         }
-
-
-        // function dijkstra(graph, start, end) {
-        //     const distances = {};
-        //     const previousNodes = {};
-        //     const queue = [];
-            
-        //     // Khởi tạo các giá trị ban đầu
-        //     graph.nodes.forEach(node => {
-        //         distances[node.node] = Infinity;
-        //         previousNodes[node.node] = null; 
-        //         queue.push(node.node);
-        //     });
-            
-        //     distances[start] = 0;
-            
-        //     while (queue.length > 0) {
-        //         // Lấy node có khoảng cách ngắn nhất từ đỉnh đầu tiên trong hàng đợi
-        //         const current = queue.reduce((minNode, node) =>
-        //             distances[node] < distances[minNode] ? node : minNode
-        //         );
-            
-        //         // Lấy index của node hiện tại trong hàng đợi
-        //         const currentIndex = queue.indexOf(current);
-        //         // Loại bỏ node hiện tại khỏi hàng đợi
-        //         queue.splice(currentIndex, 1);
-            
-        //         // Duyệt qua các node kề của node hiện tại
-        //         graph.edges
-        //             .filter(edge => edge.node1 === current || edge.node2 === current)
-        //             .forEach(edge => {
-        //                 const neighbor = edge.node1 === current ? edge.node2 : edge.node1;
-        //                 const totalDistance = distances[current] + edge.weight;
-            
-        //                 // Nếu khoảng cách tính được ngắn hơn khoảng cách hiện tại
-        //                 if (totalDistance < distances[neighbor]) {
-        //                     distances[neighbor] = totalDistance;
-        //                     previousNodes[neighbor] = current;
-        //                 }
-        //             });
-        //     }
-            
-        //     // Xây dựng đường đi từ endNode đến startNode
-        //     const path = [end];
-        //     let current = end;
-        //     while (current !== start) {
-        //         current = previousNodes[current];
-        //         path.unshift(current);
-        //     }
-            
-        //     return path;
-        // }
-
         
-        // function bfs(graph, start, target) {
-        //     const visited = new Set();
-        //     const queue = [start];
-        //     const parent = {};
-
-        //     while (queue.length > 0) {
-        //         const current = queue.shift();
-        //         visited.add(current);
-
-        //         if (current === target) {
-        //             // Reconstruct the path from target to start
-        //             const path = [];
-        //             let node = target;
-        //             while (node !== start) {
-        //                 path.unshift(node);
-        //                 node = parent[node];
-        //             }
-        //             path.unshift(start);
-        //             return path;
-        //         }
-
-        //         const neighbors = graph.edges
-        //             .filter(edge => edge.node1 === current || edge.node2 === current)
-        //             .map(edge => (edge.node1 === current ? edge.node2 : edge.node1));
-
-        //         for (const neighbor of neighbors) {
-        //             if (!visited.has(neighbor)) {
-        //                 queue.push(neighbor);
-        //                 visited.add(neighbor);
-        //                 parent[neighbor] = current;
-        //             }
-        //         }
-        //     }
-
-        //     // If no path is found
-        //     return [];
-        // }   
-
+        //Khởi tạo đối tượng Graph 
         const graph=new Graph();
         const NodeUrl = 'http://localhost:3000/NodeElements';
         const EdgeUrl = 'http://localhost:3000/EdgeElements';
@@ -257,6 +182,7 @@ class Graph {
                             }
                             console.log(shortestPath);
                             alert(`Số Node đã đi qua: ${shortestPath.length}`)
+                            alert(`Quãng đường đã phải di chuyển: ${calculateTotalDistance(shortestPath)} km`);
                     }
                 
             })
