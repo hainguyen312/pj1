@@ -1,5 +1,5 @@
-import {dijkstra} from "../../Backend/dijkstra.js";
-import {bfs} from "../../Backend/bfs.js";
+import {dijkstra} from "./dijkstra.js";
+import {bfs} from "./bfs.js";
 
 const map = L.map('map').setView([21.0253060, 105.8554601], 16);
 let markers = [];
@@ -165,7 +165,7 @@ class Graph {
                                 displayPathOnMap(shortestPath);
                             }
                             console.log(shortestPath);
-                            // alert(`Quãng đường đã di chuyển: ${calculateTotalDistance()} km`)
+                            alert(`Quãng đường đã di chuyển: ${calculateTotalDistance(shortestPath)} km`)
                     }
                 
             })
