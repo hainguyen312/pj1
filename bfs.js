@@ -6,9 +6,8 @@ export function bfs(graph, start, target) {
     while (queue.length > 0) {
         const current = queue.shift();
         visited.add(current);
-
+        //Nếu node đang xét là đích đến thì xây dựng đường đi 
         if (current === target) {
-            // Reconstruct the path from target to start
             const path = [];
             let node = target;
             while (node !== start) {
@@ -18,11 +17,11 @@ export function bfs(graph, start, target) {
             path.unshift(start);
             return path;
         }
-
+        // Duyệt qua các node kề của node đang xét
         const neighbors = graph.edges
             .filter(edge => edge.node1 === current )
             .map(edge => (edge.node2));
-
+        // Nếu node con chưa được thăm thì đẩy vào hàng đợi và gán visited
         for (const neighbor of neighbors) {
             if (!visited.has(neighbor)) {
                 queue.push(neighbor);
@@ -32,8 +31,7 @@ export function bfs(graph, start, target) {
         }
     }
 
-    // If no path is found
+    // Nếu không tìm được đừng đi
     return [];
 }   
 
-export default bfs;
