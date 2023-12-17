@@ -1,0 +1,1960 @@
+{
+  "NodeElements": [
+    {
+      "type": "node",
+      "id": 0,
+      "lat": 21.0261205 ,
+      "lon": 105.8499915
+    },
+    {
+      "type": "node",
+      "id": 1,
+      "lat": 21.025177,
+      "lon": 105.8496857
+    },
+    {
+      "type": "node",
+      "id": 2,
+      "lat": 21.0247729 ,
+      "lon": 105.8495586
+    },
+    {
+      "type": "node",
+      "id": 3,
+      "lat": 21.0246625,
+      "lon": 105.8499362
+    },
+    {
+      "type": "node",
+      "id": 4,
+      "lat": 21.024283 ,
+      "lon": 105.8494187
+    },
+    {
+      "type": "node",
+      "id": 5,
+      "lat": 21.0248701 ,
+      "lon": 105.8506796 
+    },
+    {
+      "type": "node",
+      "id": 6,
+      "lat": 21.0250981 ,
+      "lon": 105.8507556
+    },
+    {
+      "type": "node",
+      "id": 7,
+      "lat": 21.0252258,
+      "lon": 105.8503666
+    },
+    {
+      "type": "node",
+      "id": 8,
+      "lat": 21.0246815 ,
+      "lon": 105.8513125
+    },
+    {
+      "type": "node",
+      "id": 9,
+      "lat": 21.0257865 ,
+      "lon": 105.8516829
+    },
+    {
+      "type": "node",
+      "id": 10,
+      "lat": 21.0251356 ,
+      "lon": 105.8514518 
+    },
+    {
+      "type": "node",
+      "id": 11,
+      "lat": 21.0259246 ,
+      "lon": 105.8516851  
+    },
+    {
+      "type": "node",
+      "id": 12,
+      "lat": 21.0251205,
+      "lon": 105.8515322
+    },
+    {
+      "type": "node",
+      "id": 13,
+      "lat": 21.0250643 ,
+      "lon": 105.8518647 
+    },
+    {
+      "type": "node",
+      "id": 14,
+      "lat": 21.0252383 ,
+      "lon": 105.8522294  
+    },
+    {
+      "type": "node",
+      "id": 15,
+      "lat": 21.0242048 ,
+      "lon": 105.8529221  
+    },
+    {
+      "type": "node",
+      "id": 16,
+      "lat": 21.025479,
+      "lon": 105.8532306  
+    },
+    {
+      "type": "node",
+      "id": 17,
+      "lat": 21.0239264 ,
+      "lon": 105.8528365 
+    },
+    {
+      "type": "node",
+      "id": 18,
+      "lat": 21.0240378,
+      "lon": 105.8535229
+    },
+    {
+      "type": "node",
+      "id": 19,
+      "lat": 21.0244849 ,
+      "lon": 105.8536777  
+    },
+    {
+      "type": "node",
+      "id": 20,
+      "lat": 21.0236852 ,
+      "lon": 105.854762 
+    },
+    {
+      "type": "node",
+      "id": 21,
+      "lat": 21.0232915,
+      "lon": 105.8546098 
+    },
+    {
+      "type": "node",
+      "id": 22,
+      "lat": 21.0260809 ,
+      "lon": 105.8533541 
+    },
+    {
+      "type": "node",
+      "id": 23,
+      "lat": 21.0270746 ,
+      "lon": 105.8535215 
+    },
+    {
+      "type": "node",
+      "id": 24,
+      "lat": 21.0269283 ,
+      "lon": 105.8544161
+    },
+    {
+      "type": "node",
+      "id": 25,
+      "lat": 21.0273386 ,
+      "lon": 105.8535679 
+    },
+    {
+      "type": "node",
+      "id": 26,
+      "lat": 21.0278834,
+      "lon": 105.8536483 
+    },
+    {
+      "type": "node",
+      "id": 27,
+      "lat": 21.0275903,
+      "lon": 105.8558864 
+    },
+    {
+      "type": "node",
+      "id": 28,
+      "lat": 21.0274383  ,
+      "lon": 105.855912   
+    },
+    {
+      "type": "node",
+      "id": 29,
+      "lat": 21.0272715  ,
+      "lon": 105.8558998
+    },
+    {
+      "type": "node",
+      "id": 30,
+      "lat": 21.0270101 ,
+      "lon": 105.8558255
+    },
+    {
+      "type": "node",
+      "id": 31,
+      "lat": 21.0271575 ,
+      "lon": 105.8547888
+    },
+    {
+      "type": "node",
+      "id": 32,
+      "lat": 21.0269422  ,
+      "lon": 105.8547455
+    },
+    {
+      "type": "node",
+      "id": 33,
+      "lat": 21.0268648 ,
+      "lon": 105.8550913 
+    },
+    {
+      "type": "node",
+      "id": 34,
+      "lat": 21.0269762 ,
+      "lon": 105.8551261
+    },
+    {
+      "type": "node",
+      "id": 35,
+      "lat": 21.0265752 ,
+      "lon": 105.8546727 
+    },
+    {
+      "type": "node",
+      "id": 36,
+      "lat": 21.0265152 ,
+      "lon": 105.8547373 
+    },
+    {
+      "type": "node",
+      "id": 37,
+      "lat": 21.0264381 ,
+      "lon": 105.8549579
+    },
+    {
+      "type": "node",
+      "id": 38,
+      "lat": 21.0267587 ,
+      "lon": 105.8557481 
+    },
+    {
+      "type": "node",
+      "id": 39,
+      "lat": 21.0263194 ,
+      "lon": 105.8556142 
+    },
+    {
+      "type": "node",
+      "id": 40,
+      "lat": 21.0262281 ,
+      "lon": 105.8555878  
+    },
+    {
+      "type": "node",
+      "id": 41,
+      "lat": 21.0267591 ,
+      "lon": 105.8555369 
+    },
+    {
+      "type": "node",
+      "id": 42,
+      "lat": 21.0266266 ,
+      "lon": 105.8554199  
+    },
+    {
+      "type": "node",
+      "id": 43,
+      "lat": 21.0264751 ,
+      "lon": 105.8554012
+    },
+    {
+      "type": "node",
+      "id": 44,
+      "lat": 21.02637 ,
+      "lon": 105.8554387 
+    },
+    {
+      "type": "node",
+      "id": 45,
+      "lat": 21.0261169 ,
+      "lon": 105.855553 
+    },
+    {
+      "type": "node",
+      "id": 46,
+      "lat": 21.0253813 ,
+      "lon": 105.8553106 
+    },
+    {
+      "type": "node",
+      "id": 47,
+      "lat": 21.0249186 ,
+      "lon": 105.8551489  
+    },
+    {
+      "type": "node",
+      "id": 48,
+      "lat": 21.0275986 ,
+      "lon": 105.8560652 
+    },
+    {
+      "type": "node",
+      "id": 49,
+      "lat": 21.0273641 ,
+      "lon": 105.8560834 
+    },
+    {
+      "type": "node",
+      "id": 50,
+      "lat": 21.0269885 ,
+      "lon": 105.8561178  
+    },
+    {
+      "type": "node",
+      "id": 51,
+      "lat": 21.0267904 ,
+      "lon": 105.8561311 
+    },
+    {
+      "type": "node",
+      "id": 52,
+      "lat": 21.0258794 ,
+      "lon": 105.8564302  
+    },
+    {
+      "type": "node",
+      "id": 53,
+      "lat": 21.0251228 ,
+      "lon": 105.8566833  
+    },
+    {
+      "type": "node",
+      "id": 54,
+      "lat": 21.0244432 ,
+      "lon": 105.8570073  
+    },
+    {
+      "type": "node",
+      "id": 55,
+      "lat": 21.0276963 ,
+      "lon": 105.8573443   
+    },
+    {
+      "type": "node",
+      "id": 56,
+      "lat": 21.0279065 ,
+      "lon": 105.8581477  
+    },
+    {
+      "type": "node",
+      "id": 57,
+      "lat": 21.0277622 ,
+      "lon": 105.8576449   
+    },
+    {
+      "type": "node",
+      "id": 58,
+      "lat": 21.0273911  ,
+      "lon": 105.8577793   
+    },
+    {
+      "type": "node",
+      "id": 59,
+      "lat": 21.0270604  ,
+      "lon": 105.8575455  
+    },
+    {
+      "type": "node",
+      "id": 60,
+      "lat": 21.0267295 ,
+      "lon": 105.8576498  
+    },
+    {
+      "type": "node",
+      "id": 61,
+      "lat": 21.0271514 ,
+      "lon": 105.8578825  
+    },
+    {
+      "type": "node",
+      "id": 62,
+      "lat": 21.0266779 ,
+      "lon": 105.8574745  
+    },
+    {
+      "type": "node",
+      "id": 63,
+      "lat": 21.0265002 ,
+      "lon": 105.857496   
+    },
+    {
+      "type": "node",
+      "id": 64,
+      "lat": 21.0261782  ,
+      "lon": 105.8578156  
+    },
+    {
+      "type": "node",
+      "id": 65,
+      "lat": 21.0266621  ,
+      "lon": 105.8576708   
+    },
+    {
+      "type": "node",
+      "id": 66,
+      "lat": 21.0269486  ,
+      "lon": 105.8586153  
+    },
+    {
+      "type": "node",
+      "id": 67,
+      "lat": 21.0264696  ,
+      "lon": 105.8588605  
+    },
+    {
+      "type": "node",
+      "id": 68,
+      "lat": 21.0273652  ,
+      "lon": 105.8562286   
+    },
+    {
+      "type": "node",
+      "id": 69,
+      "lat": 21.0269817  ,
+      "lon": 105.8562438  
+    },
+    {
+      "type": "node",
+      "id": 70,
+      "lat": 21.0268544  ,
+      "lon": 105.8563037  
+    },
+    {
+      "type": "node",
+      "id": 71,
+      "lat": 21.0268197   ,
+      "lon": 105.8563945 
+    },
+    {
+      "type": "node",
+      "id": 72,
+      "lat": 21.0268234   ,
+      "lon": 105.8568308   
+    },
+    {
+      "type": "node",
+      "id": 73,
+      "lat": 21.0268745   ,
+      "lon": 105.8569488  
+    },
+    {
+      "type": "node",
+      "id": 74,
+      "lat": 21.0274628   ,
+      "lon": 105.8569273  
+    },
+    {
+      "type": "node",
+      "id": 75,
+      "lat": 21.0254689  ,
+      "lon": 105.8580356  
+    },
+    {
+      "type": "node",
+      "id": 76,
+      "lat": 21.0253699  ,
+      "lon": 105.8579845  
+    },
+    {
+      "type": "node",
+      "id": 77,
+      "lat": 21.0244868  ,
+      "lon": 105.8571509   
+    },
+    {
+      "type": "node",
+      "id": 78,
+      "lat": 21.025227  ,
+      "lon": 105.8581113  
+    },
+    {
+      "type": "node",
+      "id": 79,
+      "lat": 21.0253545  ,
+      "lon": 105.8585737  
+    },
+    {
+      "type": "node",
+      "id": 80,
+      "lat": 21.0251237   ,
+      "lon": 105.8586477  
+    },
+    {
+      "type": "node",
+      "id": 81,
+      "lat": 21.0244415   ,
+      "lon": 105.8572579  
+    },
+    {
+      "type": "node",
+      "id": 82,
+      "lat": 21.0244799   ,
+      "lon": 105.857338   
+    },
+    {
+      "type": "node",
+      "id": 83,
+      "lat": 21.0242376   ,
+      "lon": 105.8583149   
+    },
+    {
+      "type": "node",
+      "id": 84,
+      "lat": 21.0237812    ,
+      "lon": 105.8581692   
+    },
+    {
+      "type": "node",
+      "id": 85,
+      "lat": 21.0236176    ,
+      "lon": 105.8578749   
+    },
+    {
+      "type": "node",
+      "id": 86,
+      "lat": 21.0235669    ,
+      "lon": 105.8581898   
+    },
+    {
+      "type": "node",
+      "id": 87,
+      "lat": 21.0235915    ,
+      "lon": 105.8578356   
+    },
+    {
+      "type": "node",
+      "id": 88,
+      "lat": 21.0236777    ,
+      "lon": 105.8572166   
+    },
+    {
+      "type": "node",
+      "id": 89,
+      "lat": 21.0240516    ,
+      "lon": 105.8572075   
+    },
+    {
+      "type": "node",
+      "id": 90,
+      "lat": 21.0241848    ,
+      "lon": 105.8572022   
+    },
+    {
+      "type": "node",
+      "id": 91,
+      "lat": 21.0242032    ,
+      "lon": 105.8570202   
+    },
+    {
+      "type": "node",
+      "id": 92,
+      "lat": 21.0241685    ,
+      "lon": 105.8571276    
+    },
+    {
+      "type": "node",
+      "id": 93,
+      "lat": 21.024313   ,
+      "lon": 105.8572974   
+    },
+    {
+      "type": "node",
+      "id": 94,
+      "lat": 21.0238913    ,
+      "lon": 105.8568599   
+    },
+    {
+      "type": "node",
+      "id": 95,
+      "lat": 21.0244033    ,
+      "lon": 105.8569747   
+    },
+    {
+      "type": "node",
+      "id": 96,
+      "lat": 21.0241903    ,
+      "lon": 105.8557293   
+    },
+    {
+      "type": "node",
+      "id": 97,
+      "lat": 21.0247091    ,
+      "lon": 105.8559027   
+    },
+    {
+      "type": "node",
+      "id": 98,
+      "lat": 21.0237652    ,
+      "lon": 105.8555848   
+    },
+    {
+      "type": "node",
+      "id": 99,
+      "lat": 21.0238756     ,
+      "lon": 105.8552238    
+    },
+    {
+      "type": "node",
+      "id": 100,
+      "lat": 21.0234704    ,
+      "lon": 105.8554846   
+    },
+    {
+      "type": "node",
+      "id": 101,
+      "lat": 21.0227522     ,
+      "lon": 105.8552376   
+    },
+    {
+      "type": "node",
+      "id": 102,
+      "lat": 21.0224236     ,
+      "lon": 105.8563571   
+    },
+    {
+      "type": "node",
+      "id": 103,
+      "lat": 21.0231316     ,
+      "lon": 105.856595   
+    },
+    {
+      "type": "node",
+      "id": 104,
+      "lat": 21.0229142     ,
+      "lon": 105.857324   
+    },
+    {
+      "type": "node",
+      "id": 105,
+      "lat": 21.0227961     ,
+      "lon": 105.8574888   
+    },
+    {
+      "type": "node",
+      "id": 106,
+      "lat": 21.0223998      ,
+      "lon": 105.8576225   
+    },
+    {
+      "type": "node",
+      "id": 107,
+      "lat": 21.0243015        ,
+      "lon": 105.8569579   
+    }
+  ],
+  "EdgeElements":[
+    {
+      "type":"edge",
+      "id":1,
+      "node1":0,
+      "node2":1
+    },
+    {
+      "type":"edge",
+      "id":1,
+      "node1":1,
+      "node2":0
+    },
+    {
+      "type":"edge",
+      "id":2,
+      "node1":2,
+      "node2":1
+    },
+    {
+      "type":"edge",
+      "id":2,
+      "node1":1,
+      "node2":2
+    },
+    {
+      "type":"edge",
+      "id":3,
+      "node1":2,
+      "node2":3
+    },
+    {
+      "type":"edge",
+      "id":3,
+      "node1":3,
+      "node2":2
+    },
+    {
+      "type":"edge",
+      "id":4,
+      "node1":2,
+      "node2":4
+    },
+    {
+      "type":"edge",
+      "id":4,
+      "node1":4,
+      "node2":2
+    },
+    {
+      "type":"edge",
+      "id":5,
+      "node1":5,
+      "node2":1
+    },
+    {
+      "type":"edge",
+      "id":5,
+      "node1":1,
+      "node2":5
+    },
+    {
+      "type":"edge",
+      "id":6,
+      "node1":5,
+      "node2":6
+    },
+    {
+      "type":"edge",
+      "id":6,
+      "node1":6,
+      "node2":5
+    },
+    {
+      "type":"edge",
+      "id":7,
+      "node1":6,
+      "node2":7
+    },
+    {
+      "type":"edge",
+      "id":7,
+      "node1":7,
+      "node2":6
+    },
+    {
+      "type":"edge",
+      "id":8,
+      "node1":5,
+      "node2":8
+    },
+    {
+      "type":"edge",
+      "id":8,
+      "node1":8,
+      "node2":5
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":10,
+      "node2":8
+    },
+    {
+      "type":"edge",
+      "id":10,
+      "node1":9,
+      "node2":10
+    },
+    {
+      "type":"edge",
+      "id":11,
+      "node1":11,
+      "node2":9
+    },
+    {
+      "type":"edge",
+      "id":12,
+      "node1":12,
+      "node2":10
+    },
+    {
+      "type":"edge",
+      "id":12,
+      "node1":10,
+      "node2":12
+    },
+    {
+      "type":"edge",
+      "id":13,
+      "node1":12,
+      "node2":13
+    },
+    {
+      "type":"edge",
+      "id":13,
+      "node1":13,
+      "node2":12
+    },
+    {
+      "type":"edge",
+      "id":14,
+      "node1":13,
+      "node2":14
+    },
+    {
+      "type":"edge",
+      "id":14,
+      "node1":14,
+      "node2":13
+    },
+    {
+      "type":"edge",
+      "id":15,
+      "node1":8,
+      "node2":15
+    },
+    {
+      "type":"edge",
+      "id":15,
+      "node1":15,
+      "node2":8
+    },
+    {
+      "type":"edge",
+      "id":16,
+      "node1":15,
+      "node2":16
+    },
+    {
+      "type":"edge",
+      "id":17,
+      "node1":11,
+      "node2":16
+    },
+    {
+      "type":"edge",
+      "id":17,
+      "node1":16,
+      "node2":11
+    },
+    {
+      "type":"edge",
+      "id":18,
+      "node1":17,
+      "node2":15
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":15,
+      "node2":18
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":18,
+      "node2":15
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":19,
+      "node2":18
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":18,
+      "node2":19
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":20,
+      "node2":18
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":18,
+      "node2":20
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":20,
+      "node2":21
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":16,
+      "node2":22
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":22,
+      "node2":23
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":23,
+      "node2":24
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":24,
+      "node2":23
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":23,
+      "node2":25
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":25,
+      "node2":26
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":26,
+      "node2":27
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":27,
+      "node2":28
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":28,
+      "node2":29
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":29,
+      "node2":30
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":30,
+      "node2":31
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":31,
+      "node2":25
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":31,
+      "node2":32
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":32,
+      "node2":31
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":32,
+      "node2":33
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":33,
+      "node2":32
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":33,
+      "node2":34
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":34,
+      "node2":33
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":32,
+      "node2":35
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":35,
+      "node2":32
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":35,
+      "node2":36
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":36,
+      "node2":35
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":36,
+      "node2":37
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":37,
+      "node2":36
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":33,
+      "node2":37
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":37,
+      "node2":33
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":38,
+      "node2":39
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":39,
+      "node2":40
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":37,
+      "node2":40
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":40,
+      "node2":37
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":30,
+      "node2":38
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":45,
+      "node2":52
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":52,
+      "node2":45
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":51,
+      "node2":50
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":52,
+      "node2":51
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":53,
+      "node2":52
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":45,
+      "node2":46
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":46,
+      "node2":22
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":22,
+      "node2":46
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":50,
+      "node2":30
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":30,
+      "node2":50
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":50,
+      "node2":49
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":49,
+      "node2":48
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":27,
+      "node2":48
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":47,
+      "node2":16
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":16,
+      "node2":47
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":46,
+      "node2":47
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":47,
+      "node2":20
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":40,
+      "node2":45
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":38,
+      "node2":41
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":41,
+      "node2":42
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":42,
+      "node2":43
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":43,
+      "node2":44
+    }, 
+    {
+      "type":"edge",
+      "id":9,
+      "node1":44,
+      "node2":39
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":48,
+      "node2":55
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":55,
+      "node2":48
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":55,
+      "node2":57
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":57,
+      "node2":55
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":56,
+      "node2":57
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":57,
+      "node2":56
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":57,
+      "node2":58
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":58,
+      "node2":57
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":55,
+      "node2":59
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":59,
+      "node2":55
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":59,
+      "node2":60
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":60,
+      "node2":59
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":59,
+      "node2":61
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":61,
+      "node2":59
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":60,
+      "node2":62
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":62,
+      "node2":60
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":63,
+      "node2":62
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":62,
+      "node2":63
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":60,
+      "node2":65
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":65,
+      "node2":60
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":64,
+      "node2":52
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":52,
+      "node2":64
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":65,
+      "node2":64
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":64,
+      "node2":65
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":65,
+      "node2":66
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":66,
+      "node2":65
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":56,
+      "node2":66
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":64,
+      "node2":67
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":67,
+      "node2":64
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":68,
+      "node2":49
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":49,
+      "node2":68
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":50,
+      "node2":69
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":69,
+      "node2":50
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":68,
+      "node2":69
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":69,
+      "node2":68
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":69,
+      "node2":70
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":70,
+      "node2":69
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":70,
+      "node2":71
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":71,
+      "node2":70
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":71,
+      "node2":72
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":72,
+      "node2":71
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":72,
+      "node2":73
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":73,
+      "node2":72
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":73,
+      "node2":74
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":74,
+      "node2":73
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":64,
+      "node2":75
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":75,
+      "node2":64
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":53,
+      "node2":75
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":75,
+      "node2":53
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":53,
+      "node2":54
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":54,
+      "node2":53
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":75,
+      "node2":76
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":76,
+      "node2":75
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":76,
+      "node2":77
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":77,
+      "node2":76
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":75,
+      "node2":78
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":78,
+      "node2":75
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":78,
+      "node2":79
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":79,
+      "node2":78
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":79,
+      "node2":80
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":80,
+      "node2":79
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":81,
+      "node2":77
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":77,
+      "node2":54
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":81,
+      "node2":82
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":82,
+      "node2":83
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":83,
+      "node2":82
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":83,
+      "node2":84
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":84,
+      "node2":83
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":84,
+      "node2":85
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":85,
+      "node2":84
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":85,
+      "node2":86
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":86,
+      "node2":85
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":85,
+      "node2":87
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":87,
+      "node2":85
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":87,
+      "node2":88
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":88,
+      "node2":87
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":88,
+      "node2":89
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":89,
+      "node2":88
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":89,
+      "node2":84
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":84,
+      "node2":89
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":89,
+      "node2":90
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":90,
+      "node2":93
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":93,
+      "node2":81
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":91,
+      "node2":92
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":92,
+      "node2":90
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":91,
+      "node2":94
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":94,
+      "node2":91
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":95,
+      "node2":107
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":107,
+      "node2":91
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":54,
+      "node2":95
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":94,
+      "node2":96
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":96,
+      "node2":94
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":97,
+      "node2":96
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":96,
+      "node2":97
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":47,
+      "node2":97
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":97,
+      "node2":47
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":97,
+      "node2":95
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":95,
+      "node2":97
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":98,
+      "node2":96
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":96,
+      "node2":98
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":98,
+      "node2":99
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":99,
+      "node2":98
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":98,
+      "node2":100
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":100,
+      "node2":98
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":20,
+      "node2":100
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":100,
+      "node2":20
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":100,
+      "node2":101
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":101,
+      "node2":100
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":101,
+      "node2":102
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":102,
+      "node2":101
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":100,
+      "node2":103
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":103,
+      "node2":100
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":103,
+      "node2":94
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":94,
+      "node2":103
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":102,
+      "node2":103
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":103,
+      "node2":102
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":103,
+      "node2":104
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":104,
+      "node2":103
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":104,
+      "node2":105
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":105,
+      "node2":104
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":105,
+      "node2":88
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":88,
+      "node2":105
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":105,
+      "node2":106
+    },
+    {
+      "type":"edge",
+      "id":9,
+      "node1":106,
+      "node2":105
+    }
+
+
+
+
+
+
+  
+
+    
+
+  ]
+}
