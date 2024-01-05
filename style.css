@@ -42,7 +42,25 @@ body {
     z-index: 100;
     right: 45%;
     left: 45%;
-    height: 30px;
+    height: auto;
     color: white;
-    background-color: blue
+    background-color: green;
+    padding: 10px;
+    border: none;
+}
+#showData{
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 100;
+    line-height: 2;
+}
+#Refresh{
+    width: 150px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    z-index: 100;
+    line-height: 2;
 }

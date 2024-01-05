@@ -1,5 +1,7 @@
 import {dijkstra} from "./dijkstra.js";
 import {bfs} from "./bfs.js";
+import {dfs} from "./dfs.js"
+import { aStar } from "./A*.js";
 
 const map = L.map('map').setView([21.0253060, 105.8554601], 16);
 let markers = [];
@@ -25,11 +27,13 @@ class Graph {
         this.edges.push({ node1, node2, weight});
     }
     }
+        const showDataBtn=document.getElementById('showData');
+        const refreshBtn=document.getElementById('Refresh');
         const startInput = document.getElementById('startPlace');
         const targetInput = document.getElementById('targetPlace');
         
         function addMarkerToMap(node) {
-            const marker = L.marker([node.lat, node.lon]).addTo(map);
+            const marker = L.marker([node.lat, node.lon],).addTo(map);
             markers.push(marker);
         }
 
@@ -53,9 +57,9 @@ class Graph {
             for (let i = 0; i < path.length - 1; i++) {
                 const currentNode = graph.nodes[path[i]];
                 const nextNode = graph.nodes[path[i + 1]];
-                addMarkerToMap(currentNode);
-                addMarkerToMap(nextNode);
-                const polyline = L.polyline([[currentNode.lat, currentNode.lon], [nextNode.lat, nextNode.lon]], { color: 'blue', weight:3}).addTo(map);
+                addMarkerToMap(graph.nodes[path[0]]);
+                addMarkerToMap(graph.nodes[path[path.length-1]]);
+                L.polyline([[currentNode.lat, currentNode.lon], [nextNode.lat, nextNode.lon]], { color: 'blue', weight:3}).addTo(map);
             }
         }
 
@@ -85,12 +89,11 @@ class Graph {
             }
             return totalDistance;
         }
-
         const graph=new Graph();
         const NodeUrl = 'http://localhost:3000/NodeElements';
         const EdgeUrl = 'http://localhost:3000/EdgeElements';
         Promise.all([
-
+            
             fetch(NodeUrl)
             .then(response => response.json())
             .then(data => {
@@ -98,10 +101,8 @@ class Graph {
                     if (element.type === 'node' && element.lat && element.lon) {
                         graph.addNode(element.id, element.lat, element.lon);
                     }
-                    // graph.nodes.forEach(node =>{
-                        //     addMarkerToMap(node)
-                        // })
-                    });
+                    
+                });
             })
             .catch(error => {
                 console.error('Error fetching node data:', error);
@@ -109,7 +110,7 @@ class Graph {
             fetch(EdgeUrl)
             .then(response => response.json())
             .then(data => {
-                    data.forEach(element =>{
+                data.forEach(element =>{
                     if(element.type ==='edge'){
                         const node1=graph.nodes[element.node1];
                         const node2=graph.nodes[element.node2];
@@ -126,7 +127,23 @@ class Graph {
                 console.error('Error fetching node data:', error);
             })
             .then(()=>{
-                console.log(graph);
+                showDataBtn.addEventListener('click', () => {
+                    clearMap();
+                
+                    // Hiển thị tất cả các node trên bản đồ
+                    graph.nodes.forEach(node => {
+                        addMarkerToMap(node);
+                    });
+                
+                    // Hiển thị tất cả các cạnh trên bản đồ
+                    graph.edges.forEach(edge => {
+                        const currentNode = graph.nodes[edge.node1];
+                        const nextNode = graph.nodes[edge.node2];
+                        L.polyline([[currentNode.lat, currentNode.lon], [nextNode.lat, nextNode.lon]], { color: 'red', weight: 2 }).addTo(map);
+                    });
+                });
+                
+                refreshBtn.addEventListener('click',clearMap);
                 startInput.addEventListener('input', handleInputEvent);
                 targetInput.addEventListener('input', handleInputEvent);
                 function handleInputEvent(){
@@ -153,20 +170,27 @@ class Graph {
                 });
                 document.getElementById('startFinding').addEventListener('click', findShortestPath);
                 function findShortestPath() {
-                        console.log(startNodeId,targetNodeId);
-                        console.log(graph);
-                        console.log(selectedMethod);
-                            let shortestPath;
-                            if (selectedMethod === 'Dijkstra') {
-                                shortestPath = dijkstra(graph, startNodeId, targetNodeId);
-                                displayPathOnMap(shortestPath);
-                            } else if (selectedMethod === 'BFS') {
-                                shortestPath = bfs(graph, startNodeId, targetNodeId);
-                                displayPathOnMap(shortestPath);
-                            }
-                            console.log(shortestPath);
-                            alert(`Quãng đường đã di chuyển: ${calculateTotalDistance(shortestPath)} km`)
+                    console.log(startNodeId,targetNodeId);
+                    console.log(graph);
+                    console.log(selectedMethod);
+                    let shortestPath;
+                    if (selectedMethod === 'Dijkstra') {
+                        shortestPath = dijkstra(graph, startNodeId, targetNodeId);
+                        displayPathOnMap(shortestPath);
+                    } else if (selectedMethod === 'BFS') {
+                        shortestPath = bfs(graph, startNodeId, targetNodeId);
+                        displayPathOnMap(shortestPath);
+                    }else if (selectedMethod === 'DFS') {
+                        shortestPath = dfs(graph, startNodeId, targetNodeId);
+                        displayPathOnMap(shortestPath);
+                    }else if (selectedMethod === 'A*') {
+                        shortestPath = aStar(graph, startNodeId, targetNodeId);
+                        displayPathOnMap(shortestPath);
                     }
+                    console.log(shortestPath);
+                    alert(`Quãng đường đã di chuyển: ${calculateTotalDistance(shortestPath)} km`)
+                }
                 
             })
         ])
+        
