@@ -1,42 +1,33 @@
+import { Stack } from "./main.js";
 export function dfs(graph, start, target) {
     const visited = new Set();
+    const stack = new Stack();
     const path = [];
-
-    // Hàm đệ quy thực hiện DFS
-    function dfsRecursive(current) {
-        // Đánh dấu đỉnh hiện tại đã thăm
-        visited.add(current);
-        // Thêm đỉnh hiện tại vào đường đi
-        path.push(current);
-
-        // Nếu đỉnh hiện tại là đỉnh kết thúc, trả về đường đi
-        if (current === target) {
-            return true;
+  
+    stack.push([start]);
+  
+    while (!stack.isEmpty()) {
+      const currentPath = stack.pop();
+      const currentNode = currentPath[currentPath.length - 1];
+  
+      if (!visited.has(currentNode)) {
+        visited.add(currentNode);
+  
+        if (currentNode === target) {
+          return currentPath;
         }
-
-        // Lấy tất cả các đỉnh láng giềng của đỉnh hiện tại
-        const neighbors = graph.edges
-            .filter(edge => edge.node1 === current )
-            .map(edge => ( edge.node2 ));
-
-        // Duyệt qua các đỉnh láng giềng chưa được thăm
-        for (const neighbor of neighbors) {
+  
+        graph.edges
+          .filter(edge => edge.node1 === currentNode)
+          .forEach(edge => {
+            const neighbor =edge.node2;
             if (!visited.has(neighbor)) {
-                // Nếu tìm thấy đường đi, kết thúc đệ quy
-                if (dfsRecursive(neighbor)) {
-                    return true;
-                }
+              const newPath = [...currentPath, neighbor];
+              stack.push(newPath);
             }
-        }
-
-        // Nếu không tìm thấy đường đi từ đỉnh hiện tại, loại bỏ đỉnh này khỏi đường đi
-        path.pop();
-        return false;
+          });
+      }
     }
-
-    // Gọi hàm đệ quy để thực hiện DFS từ đỉnh xuất phát
-    dfsRecursive(start);
-
-    // Trả về đường đi hoặc mảng rỗng nếu không tìm thấy
-    return path.length > 0 ? path : [];
-}
+  
+    return null; // No path found
+  }
